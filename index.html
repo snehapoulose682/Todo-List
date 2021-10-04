@@ -11,15 +11,18 @@
 <body>
     <div class="container">
         <div class="app">
-            <h2>Todo List</h2>
-            <form>
-                <input type="text" placeholder="Enter your task">
-                <button type="submit">Add</button>
+            <h2 class="title-text">Todo List</h2>
+            <form class="form">
+                <input type="text" class="form__input" placeholder="Enter your task">
+                <button type="submit" class="button">Add</button>
             </form>
-            <ul>
-                <li><input type="checkbox">Item 1 <i class="fa fa-trash"></i></li>
-                <li><input type="checkbox">Item 1 <i class="fa fa-trash"></i> </li>
-                <li><input type="checkbox">Item 1 <i class="fa fa-trash"></i></li>
+            <ul class="task__list">
+                <li class="task__item"><input type="checkbox" id="item1" name="item1" value="Item 1">
+                <label for="item1"> Item 1 </label> <button class="button--state-delete"> <i class="fa fa-trash"></i></button></li>
+                <li class="task__item" ><input type="checkbox" id ="item2" name="item2" value="Item 2">
+                <label for="item2"> Item 2</label><button class="button--state-delete"><i class="fa fa-trash"></i></button></li>
+                <li class="task__item"><input type="checkbox" id="item3" name="item3" value="Item 3">
+                <label for="item3">Item 3</label><button class="button--state-delete"> <i class="fa fa-trash"></i></button></li>
             </ul>
         </div>
     </div>
