@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app">
+            <h2 class="title-text">Todo List</h2>
+            <form class="form">
+                <input type="text" class="form__input" placeholder="Enter your task">
+                <button type="submit" class="button">Add</button>
+            </form>
+            <ul class="task__list">
+                <li class="task__item"><input type="checkbox" id="item 1" name="item 1" value="Item 1">
+                <label for="item1"> Item 1 </label> <button class="button--state-delete"> <i class="fa fa-trash"></i></button></li>
+                <li class="task__item" ><input type="checkbox" id ="item 2" name="item 2" value="Item 2">
+                <label for="item 2"> Item 2</label><button class="button--state-delete"><i class="fa fa-trash"></i></button></li>
+                <li class="task__item"><input type="checkbox" id="item 3" name="item 3" value="Item 3">
+                <label for="item 3">Item 3</label><button class="button--state-delete"> <i class="fa fa-trash"></i></button></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
