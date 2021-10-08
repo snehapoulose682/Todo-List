@@ -16,7 +16,7 @@ body {
     text-align: center;
     padding-top: 10px 0;
 }
-#form {
+.form--task-input {
     display: flex;
     width: 100%;
 }
@@ -53,4 +53,12 @@ body {
     float: right;
     cursor: pointer;
 }
-
+.checkbox__input {
+    font-size: 20px;
+    float: left;
+    cursor: pointer;
+}
+.output-text {
+    display: flex;
+    justify-content: flex-start;
+}
