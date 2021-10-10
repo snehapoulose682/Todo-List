@@ -34,8 +34,8 @@ function deleteTask() {
 
   for (var i = 0; i < closeButton.length; i++) {
     closeButton[i].onclick = function () {
-      var div = this.parentElement;
-      div.style.display = "none";
+       this.parentElement.remove();
+       CheckedTask();
     }
   }
 
