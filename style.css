@@ -61,7 +61,7 @@ body {
     display: flex;
     justify-content: flex-start;
 }
-@media  (max-width:370px){
+@media  (max-width:380px){
     .title-text {
         font-size: 20px;
         text-align: center;
@@ -95,6 +95,11 @@ body {
         padding: 12px 8px 12px 8px;
         background-color:whitesmoke;
         border-bottom: 1px solid black;
+    }
+    .output-text {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 12px;
     }
 }
 
