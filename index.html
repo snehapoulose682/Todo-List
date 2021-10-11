@@ -16,15 +16,15 @@
     <div class="container">
         <div class="app">
             <h2 class="title-text">Todo List</h2>
-            <form class= "form--task-input">
+            <form onsubmit="return false" class="form--task-input">
                 <input type="text" class="form__input" id="itemInput" placeholder="Enter your task">
-                <button type="button" class="button" onclick="addTask()">Add</button>
+                <button type="button" class="button--task-input" onclick="addTask()">Add</button>
             </form>
             <ul class="task__list" id="taskList">
 
             </ul>
-            <p class = "output-text" id="output"></p>
-            
+            <p class="output-text" id="output"></p>
+
 
         </div>
     </div>

@@ -20,6 +20,7 @@ function addTask() {
     delButton.className += "button--state-delete"
     taskList.appendChild(delButton);
     taskList.appendChild(checkBox);
+    CheckedTask();
   }
   document.getElementById("itemInput").value = "";
 
@@ -42,16 +43,17 @@ function deleteTask() {
 
 function CheckedTask() {
   var inputElems = document.getElementsByTagName("input");
-  var count = 0;
+  var countTrue = 0;
+  var countTotal = 0;
 
   for (var i = 0; i < inputElems.length; i++) {
-    if (inputElems[i].type === "checkbox" && inputElems[i].checked === true) {
-      count++;
-      document.getElementById("output").innerHTML = count + " task completed ";
+    if (inputElems[i].type === "checkbox") {
+      countTotal++;
+    }
+    if (inputElems[i].checked === true) {
+      countTrue++;
     }
   }
+  document.getElementById("output").innerHTML = countTrue + " task completed  out of " + countTotal;
 }
-
-
-
 
